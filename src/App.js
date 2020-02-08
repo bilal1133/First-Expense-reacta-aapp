@@ -19,10 +19,10 @@ function App() {
 
 
 
-const first=store.dispatch(addExpense({ description: 'Water bill', amount: 4500 }));
-store.dispatch(addExpense({ description: 'Water bill', amount: 4500 }));
+// const first=store.dispatch(addExpense({ description: 'Water bill', amount: 4500 }));
+// store.dispatch(addExpense({ description: 'Water bill', amount: 4500 }));
 // store.dispatch(removeExpence(first.expense.id));
-store.dispatch(editExpence(first.expense.id,{description: "hi this is updated",createdAt:1580877878000}))
+// store.dispatch(editExpence(first.expense.id,{description: "hi this is updated",createdAt:1580877878000}))
 // store.dispatch(setText('HI there'))
 // store.dispatch(sortByAmount())
 // store.dispatch(sortByDate())
