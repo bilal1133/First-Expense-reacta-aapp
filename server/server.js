@@ -1,8 +1,9 @@
+
 const  path = require('path')
 const  express =require('express')
 const app = express();
 const publicPath = path.join(__dirname,'..','build')
-const port = process.env.PORT || 3000
+ const port = process.env.PORT || 3000;
 app.use(express.static(publicPath))
 
 app.get('*',(req,res)=>{
@@ -11,13 +12,14 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("Server is running")
+app.listen(port,()=>{
+    console.log("Server is running and listning "  + port);
 })
 
 
-
-
+// app.listen(port);
+//
+// console.log('App is listening on port ' + port);
 
 
 
@@ -35,7 +37,7 @@ app.listen(3000,()=>{
 //
 // const app = express();
 //
-// // Serve the static files from the React app
+//  Serve the static files from the React app
 // app.use(express.static(path.join(__dirname, 'client/build')));
 //
 // // An api endpoint that returns a short list of items
@@ -47,7 +49,7 @@ app.listen(3000,()=>{
 //
 // // Handles any requests that don't match the ones above
 // app.get('*', (req,res) =>{
-//     res.sendFile(path.join(__dirname+'/client/public/index.html'));
+//     res.sendFile(path.join(__dirname+'/public/index.html'));
 // });
 //
 // const port = process.env.PORT || 5000;
